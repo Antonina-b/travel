@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="Win-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Travel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <svg class="logo-icon">
+                        <use xlink:href="sprite.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-items"><a href="#" class="navbar-link">Destination</a></li>
+                    <li class="navbar-items"><a href="#" class="navbar-link">Offer</a></li>
+                    <li class="navbar-items"><a href="#" class="navbar-link">Tour</a></li>
+                    <li class="navbar-items"><a href="#" class="navbar-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="auth-search_container">
+                <div class="auth">
+                    <a href="#" class="auth-link">
+                        <svg class="auth-icon">
+                            <use xlink:href="sprite.svg#user"></use>
+                        </svg>
+                        <span class="auth-text">My Account</span>
+                    </a>
+                </div>
+                <div class="search-form">
+                    <button class="search-btn">
+                        <svg class="search-img">
+                            <use xlink:href="sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section plan-trip">
+            <div class="section_inner">
+                <div class="plan-trip_container">
+                    <img src="img/hero-banner.png" alt="" class="plan-trip_img">
+                    <p class="plan-trip_text">It’s Time To Explore The World</p>
+                    <button class="plan-trip_btn">Plan Your Trip</button>
+                </div>
+                <form action="" method="GET" class="search-box">
+                    <div class="search-box_items">
+                        <p><label for="countries" class="search-box_items_title">Destinations</label></p>
+                        <select id="countries" name="countries" class="search-box_items_select">
+                            <option value="arabEgypt" selected class="search-box_items_value">Arab Egypt</option>
+                            <option value="italy" class="search-box_items_value">Italy</option>
+                            <option value="england" class="search-box_items_value">England</option>
+                        </select>
+                    </div>
+                    <div class="search-box_items">
+                        <p><label for="date" class="search-box_items_title">Check In</label></p>
+                        <input type="date" id="start" name="trip-start"
+                                value="2021-02-01" min="2021-01-01" max="202-12-31" class="search-box_items_select">
+                    </div>
+                    <div class="search-box_items">
+                        <p><label for="priceRange" class="search-box_items_title">Price Range</label></p>
+                        <select id="priceRange" name="priceRange" class="search-box_items_select">
+                            <option value="500" class="search-box_items_value">$500 - $10,000</option>
+                            <option value="10000" class="search-box_items_value">$10,000 - $50,000</option>
+                            <option value="50000" class="search-box_items_value">Above $50,000</option>
+                        </select>
+                    </div>
+                    <div class="search-box_items">
+                        <button class="search-box_items_btn">Discover Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section how-it-works">
+            <div class="section_inner">
+                <div class="how-it-works_box">
+                    <div class="how-it-works_container">
+                        <div class="how-it-works_image">
+                            <img src="img/destination.png" alt="location" class="how-it-works_img">
+                        </div>
+                        <div class="how-it-works_content">
+                            <h3 class="how-it-works_title">Choose Destination</h3>
+                            <p class="how-it-works_description">Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </div>
+                    <div class="how-it-works_container">
+                        <div class="how-it-works_image">
+                            <img src="img/binocular.png" alt="binocular" class="how-it-works_img">
+                        </div>
+                        <div class="how-it-works_content">
+                            <h3 class="how-it-works_title">Explore The Place</h3>
+                            <p class="how-it-works_description">Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </div>
+                    <div class="how-it-works_container">
+                        <div class="how-it-works_image">
+                            <img src="img/backpack.png" alt="backpack" class="how-it-works_img">
+                        </div>
+                        <div class="how-it-works_content">
+                            <h3 class="how-it-works_title">Start Your Journey</h3>
+                            <p class="how-it-works_description">Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </div>
+                    <div class="how-it-works_container">
+                        <div class="how-it-works_image">
+                            <img src="img/ukelele.png" alt="ukelele" class="how-it-works_img">
+                        </div>
+                        <div class="how-it-works_content">
+                            <h3 class="how-it-works_title">Let’s Enjoy</h3>
+                            <p class="how-it-works_description">Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section top-destinations">
+            <div class="section_inner">
+                <div class="top-destinations_box">
+                    <div class="top-destinations_container">
+                        <h3 class="top-destinations_title">Top <span class="top-destinations_title_important">Destinations</span> In The World</h3>
+                        <p class="top-destinations_description">It is a long established fact that a reader will be the distracted by the readable content of a page when looking at its layout from it.</p>
+                        <button class="top-destinations_btn">Discover More</button>
+                    </div>
+                    <div class="top-destinations_container">
+                        <img src="img/cuba.png" alt="Cuba City" class="top-destinations_img">
+                        <p class="top-destinations_text">Cuba City</p>
+                    </div>
+                    <div class="top-destinations_container">
+                        <img src="img/paris.png" alt="Paris-City" class="top-destinations_img">
+                        <p class="top-destinations_text">Paris</p>
+                    </div>
+                    <div class="top-destinations_container">
+                        <img src="img/japan.png" alt="Japan" class="top-destinations_img">
+                        <p class="top-destinations_text">Japan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="top-destinations_background">
+                <img src="img/background.png" alt="Background" class="top-destinations_background_img">
+            </div>
+        </section>
+
+        <section class="section about-us">
+            <div class="section_inner">
+                <div class="about-us_box">
+                    <div class="about-us_image">
+                        <img src="img/lighthouse.png" alt="lighthouse" class="about-us_img">
+                    </div>
+                    <div class="about-us_content">
+                        <div class="about-us_container">
+                            <h2 class="about-us_title">We Offering In Total 793 Tours Out The World</h2>
+                        </div>
+                        <div class="about-us_container">
+                            <div class="about-us_container_img">
+                                <img src="img/user.png" alt="User" class="about-us_container_icon">
+                            </div>
+                            <div class="about-us_container_content" id="about-us_container_content">
+                                <h3 class="about-us_container_title">Best Travel Guide Always For Your Services</h3>
+                                <p class="about-us_container_description">Travel has helped us to understandsa the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes. Travel has helped us to understand the meaning of life</p>
+                            </div>
+                        </div>
+                        <div class="about-us_container">
+                            <div class="about-us_container_img">
+                                <svg class="about-us_container_icon">
+                                    <use xlink:href="sprite.svg#globe"></use>
+                                </svg>  
+                            </div>
+                            <div class="about-us_container_content">
+                                <h3 class="about-us_container_title">World Class Services Provide For You</h3>
+                            </div>
+                        </div>
+                        <div class="about-us_container">
+                            <div class="about-us_container_img">
+                                <svg class="about-us_container_icon">
+                                    <use xlink:href="sprite.svg#headphones"></use>
+                                </svg>
+                            </div>
+                            <div class="about-us_container_content">
+                                <h3 class="about-us_container_title">24/7 Strong Customer Support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section destination">
+            <div class="section_inner">
+                <div class="destination_content">
+                    <h2 class="destination_title">Choose Your Destination</h2>
+                </div>
+                <div class="destination_box">
+                    <div class="destination_container">
+                        <div class="destination_container_image">
+                            <img src="img/santorini_1.png" alt="Santorini" class="destination_container_img">
+                        </div>
+                        <div class="destination_container_description">
+                            <div class="destination_container_description-item">
+                                <h3 class="destination_container_description-title">Santorini, Oia Greece</h3>
+                                <span class="destination_container_description-price">$2000</span>
+                                <span class="destination_container_description-rating">
+                                    <svg class="destination_container_description-rating_svg"height="10" width="54" viewBox="0 0 65 12">
+                                        <path d="m 13 4.6 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.1 -0.5 -0.1 -0.5 0 l -1.5 4 l -4.6 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 h 0.3 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.4 l 3.5 -2.5 c 0.1 0 0.1 -0.1 0.1 -0.2 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z" fill="#feba02"></path>
+                                    </svg>
+                                </span>
+                                <span class="destination_container_description-watchers">5k Reviews</span>
+                            </div>
+                            <button class="destination_container_description-button">+</button>
+                        </div>
+                    </div>
+                    <div class="destination_container">
+                        <div class="destination_container_image">
+                            <img src="img/santorini_2.png" alt="Santorini" class="destination_container_img">
+                        </div>
+                        <div class="destination_container_description">
+                            <div class="destination_container_description-item">
+                                <h3 class="destination_container_description-title">Santorini, Oia Greece</h3>
+                                <span class="destination_container_description-price">$2000</span>
+                                <span class="destination_container_description-rating">
+                                    <svg class="destination_container_description-rating_svg"height="10" width="54" viewBox="0 0 65 12">
+                                        <path d="m 13 4.6 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.1 -0.5 -0.1 -0.5 0 l -1.5 4 l -4.6 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 h 0.3 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.4 l 3.5 -2.5 c 0.1 0 0.1 -0.1 0.1 -0.2 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z" fill="#feba02"></path>
+                                    </svg>
+                                </span>
+                                <span class="destination_container_description-watchers">5k Reviews</span>
+                            </div>
+                            <button class="destination_container_description-button">+</button>
+                        </div>
+                        <button class="destination_container_btn">View All Places</button>
+                    </div>
+                    <div class="destination_container">
+                        <div class="destination_container_image">
+                            <img src="img/santorini_3.png" alt="Santorini" class="destination_container_img">
+                        </div>
+                        <div class="destination_container_description">
+                            <div class="destination_container_description-item">
+                                <h3 class="destination_container_description-title">Santorini, Oia Greece</h3>
+                                <span class="destination_container_description-price">$2000</span>
+                                <span class="destination_container_description-rating">
+                                    <svg class="destination_container_description-rating_svg"height="10" width="54" viewBox="0 0 65 12">
+                                        <path d="m 13 4.6 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.1 -0.5 -0.1 -0.5 0 l -1.5 4 l -4.6 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 h 0.3 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.4 l 3.5 -2.5 c 0.1 0 0.1 -0.1 0.1 -0.2 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z m 13 0 c 0 -0.1 -0.1 -0.2 -0.2 -0.2 l -4.5 -0.3 l -1.5 -4 c -0.1 -0.2 -0.4 -0.2 -0.5 0 l -1.5 4 l -4.5 0.3 c -0.1 0 -0.2 0.1 -0.2 0.2 s 0 0.2 0.1 0.3 l 3.5 2.5 l -1.2 4.3 c 0 0.1 0 0.2 0.1 0.3 s 0.2 0.1 0.3 0 l 3.7 -2.6 l 3.7 2.6 h 0.3 c 0.1 -0.1 0.1 -0.2 0.1 -0.3 l -1.2 -4.3 l 3.5 -2.5 Z" fill="#feba02"></path>
+                                    </svg>
+                                </span>
+                                <span class="destination_container_description-watchers">5k Reviews</span>
+                            </div>
+                            <button class="destination_container_description-button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials">
+            <div class="section_inner">
+                <div class="testimonials_content">
+                    <h2 class="testimonials_title">What Our Happy Customers Say About Us</h2>
+                </div>
+                <div class="testimonials_container">
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_1.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_2.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_3.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_4.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <div class="testimonials_layout">
+                            <button class="testimonials_button">
+                                <img src="img/feedback_5.png" alt="" class="testimonials_image">
+                            </button>
+                            <div class="testimonials_title">
+                                <h3 class="testimonials_heading">Md Shamim Hossain</h3>
+                                <h4 class="testimonials_subject">UI/UX Designer</h4>
+                            </div>
+                        </div>
+                        <div class="testimonials_item_text">
+                            <p>Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.</p>
+                        </div>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_6.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_7.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                    <div class="testimonials_item">
+                        <button class="testimonials_button">
+                            <img src="img/feedback_8.png" alt="" class="testimonials_image">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section apps">
+            <div class="section_inner">
+                <div class="apps_container">
+                    <img src="img/apps_image.png" alt="Download Apps" class="apps_image">
+                    <h2 class="apps-title">Download Now Travel Community Apps</h2>
+                    <div class="apps_stores">
+                        <ul class="apps_list">
+                            <li class="apps_item">
+                                <a href="#" class="apps_button">
+                                    <img src="img/google-play.png" alt="Google Play" class="apps_img">
+                                </a>
+                            </li>
+                            <li class="apps_item">
+                                <a href="#" class="apps_button">
+                                    <img src="img/apple-store.png" alt="AppStore" class="apps_img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_inner">
+            <div class="footer_top">
+                <div class="footer_contacts">
+                    <div class="footer_logo">
+                        <a href="#" class="footer_logo-link">
+                            <svg class="footer_logo-icon">
+                                <use xlink:href="sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer_content">You can dream, create, design, and buildsa the most wonderful place.</p>
+                    <address class="footer_contacts-content">
+                        <div class="footer_contacts-item">
+                            <a href="#" class="footer_contacts-link">
+                                <svg class="footer_contacts-img">
+                                    <use xlink:href="sprite.svg#phone_icon"></use>
+                                </svg>      
+                            </a>
+                            +0123 456 987, +0123 456 987
+                        </div>
+                        <div class="footer_contacts-item">
+                            <a href="#" class="footer_contacts-link">
+                                <svg class="footer_contacts-img">
+                                    <use xlink:href="sprite.svg#mail_icon"></use>
+                                </svg>    
+                            </a>
+                            yourmailaddress@gmail.com
+                        </div>
+                        <div class="footer_contacts-item">
+                            <a href="#" class="footer_contacts-link">
+                                <svg class="footer_contacts-img">
+                                    <use xlink:href="sprite.svg#location_icon"></use>
+                                </svg>    
+                            </a>
+                            www.yourwebsitename.com
+                        </div>
+                    </address>
+                </div>
+                <div class="footer_hot-links">
+                    <h3 class="footer_hot-links-title">Quick Links</h3>
+                    <ul class="footer_nav">
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">About Us</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Destinations</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Latest Blog</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Our Team</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_hot-links">
+                    <h3 class="footer_hot-links-title">Support</h3>
+                    <ul class="footer_nav">
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Customer Support</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Privacy & Policy</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Terms & Condition</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Forum</a>
+                        </li>
+                        <li class="footer_nav-item">
+                            <a href="#" class="footer_link">Tour Guid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_subscription">
+                    <label for="email" class="footer_subcription-title">Newsletter</label>
+                    <input type="email" class="footer_subcription-input">
+                    <button class="footer_subcription-btn">Subscribe Now</button>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p class="footer_copyright">Copyright &#64;2020 Ravel. Designed By <span class="footer_copyright_inner">Md Shamim Hossain</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
